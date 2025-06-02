@@ -1,4 +1,3 @@
-title: 我的大创项目站
-description: 欢迎访问我们的项目文档站点！
-theme: jekyll-theme-cayman
-markdown: kramdown
+title: FSWQZ 无人机视角下的罂粟智能检测项目
+description: 欢迎访问我们的大创项目主页！项目聚焦基于YOLO的低空遥感目标检测。
+theme: null
