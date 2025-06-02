@@ -1,0 +1,26 @@
+<annotation>
+	<folder>UAV-Poppy</folder>
+	<filename>0132.jpg</filename>
+	<path>C:\Users\huawei\Desktop\UAV-Poppy\0132.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1658</width>
+		<height>931</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Poppy</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>852</xmin>
+			<ymin>396</ymin>
+			<xmax>1658</xmax>
+			<ymax>914</ymax>
+		</bndbox>
+	</object>
+</annotation>

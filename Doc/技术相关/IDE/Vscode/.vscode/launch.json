@@ -1,0 +1,65 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // 这个意思是单独弹出一个终端运行程序
+            "name": "g++外部终端",
+            "type": "cppdbg",
+            "request": "launch",
+            // 在中间加一个program文件夹，专门用于存放编译后的程序，这样就不会污染源代码文件夹
+            "program": "${fileDirname}\\program\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            // 这里的cwd是gdb.exe所在的目录，换成你自己的路径
+            "cwd": "D:/mingw64/bin",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            // 这里同理，换成你自己的路径
+            "miDebuggerPath": "D:/mingw64/bin/gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: g++外部终端"
+        },
+        {
+            // 这个意思是在VSCode的终端里运行程序
+            "name": "g++内部终端",
+            "type": "cppdbg",
+            "request": "launch",
+            // 在中间加一个program文件夹，专门用于存放编译后的程序，这样就不会污染源代码文件夹
+            "program": "${fileDirname}\\program\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            // 这里的cwd是gdb.exe所在的目录，换成你自己的路径
+            "cwd": "D:/mingw64/bin",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            // 这里同理，换成你自己的路径
+            "miDebuggerPath": "D:/mingw64/bin/gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: g++内部终端"
+        }
+    ]
+}
